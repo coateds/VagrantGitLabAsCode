@@ -1,0 +1,2 @@
+# VagrantGitLabAsCode
+GitLab CE
