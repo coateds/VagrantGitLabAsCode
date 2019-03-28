@@ -23,7 +23,8 @@ Vagrant.configure("2") do |config|
     chef.nodes_path = "nodes"
     chef.roles_path = "roles"
 
-    chef.add_recipe "gitlab-as-code::default"
-    chef.add_recipe "gitlab-as-code::install-gitlab"
+    # chef.add_recipe "gitlab-as-code::default"
+    # chef.add_recipe "gitlab-as-code::install-gitlab"
+    chef.add_recipe "gitlab-as-code::hosts-file"
   end
 end
