@@ -27,7 +27,11 @@ package %w(curl openssh-server cronie)
 # copy file locally and run
 # sudo curl  https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh -o script.rpm.sh
 # + chmod and call file
-
+remote_file '/home/vagrant/script.rpm.sh' do
+  source 'https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh'
+  mode '0755'
+  action :create
+end
 
 # sudo yum install gitlab-ce
 
